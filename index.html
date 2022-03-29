@@ -1,0 +1,1937 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CinEspacio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ESTLIOS -->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/milkyway.css">
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+<!--SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/animatescroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/waypoints/jquery.animateNumbers.min.js"></script>
+<script src="js/waypoints/jQuerySimpleCounter.js"></script>
+<script src="js/waypoints/jquery.waypoints.min.js"></script>
+<!-- Script ScrollMagic
+   ================================================== -->
+<script src="js/js/lib/greensock/TweenMax.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script>
+var controller = new ScrollMagic.Controller();
+</script>
+
+<script>
+new WOW().init();
+</script>
+<script>
+    smoothScroll.init();
+</script>
+<script src="js/mouse.parallax.js"></script>
+<script src="js/three.js-master/src/Three.js"></script>
+<script src="js/mouse.parallaxpreload.js"></script>
+<script src="js/mouse.parallaxmodal.js"></script>
+<script>
+$(document).ready(function() {
+				$('.solar-syst').mouseParallax({ moveFactor: 300 });
+});
+</script>
+<script>
+$(document).ready(function() {
+				$('#status').mouseParallaxpreload({ moveFactor:100 });
+				$('.icon-11-black-hole').mouseParallaxpreload({ moveFactor:5 });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status" class="mouse-bg"><i class="icon-45-astronaut"></i></div>
+    <i class="icon-11-black-hole"></i>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).on('load', function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'hidden'});
+			$('.indicatorplanet').delay(350).addClass('wow fadeInOut');
+			$('.welcome').delay(350).addClass('wow flash');
+			$('#solar').delay(350).addClass('zoomIn ');
+
+		})
+	//]]>
+</script>
+	
+<div id="top" style="margin-bottom:55px" class="clearfix container-width">
+		<div class="row">
+        	<div class="col-lg-12 col-md-12">
+<div class="indicatorplanet"><h3 class="welcome">Bienvenido a</br>Cine + Espacio</h3></div>
+                 <div id="solar" class="solar-syst mouse-bg">
+
+                    <div class="pluto"></div>
+     				<div class="uranus"></div>
+					<div class="neptune"></div>
+                    <div class="saturn"><a href="#"><div id="saturn"></div></a></div>
+                    <div class="jupiter"><a href=""><div id="jupiter"></div></a></div>
+                    <div class="asteroids-belt"></div>
+                  <a onclick="$('#pmars').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="mars" data-planet="mars"><div id="mars"></div></div>
+                  </a>
+                  <a onclick="$('#pearth').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="earth" data-planet="earth"><div id="earth"></div></div>
+                  </a>
+				  <a onclick="$('#pvenus').animatescroll({scrollSpeed:3000,easing:'swing'});">
+					<div class="venus" data-planet="venus"><div id="venus"></div></div>
+				  </a>
+				  <a onclick="$('#pmercury').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="mercury" data-planet="mercurio"><div class="mercuryplanet"></div></div>
+                  </a>
+                  <a onclick="$('#solsun').animatescroll({scrollSpeed:2000,easing:'swing'});">
+                    <div class="sun" data-planet="sun"><div id="sun"></div></div>
+                  </a>
+
+       	   </div>
+
+        	</div>
+        </div>
+</div>
+        <!-- ESTRELLA SOL -->
+<article id="solsun" style="margin-top:380px">
+	<div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Sol</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pmercury').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="mercurio" align="left" data-toggle="tooltip" title="Viajar a Mercurio" data-placement="right">
+  <!-- ICONUP -->
+    <svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+</div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div  class="boxplanet wow">
+ <object class="planetnimated" type="text/html" data="images/planets/animated/sun.html" width="480" height="280"></object> 
+</div>
+                      <div class="suncore"><span title="mecurt">Corteza</span><span title="mecore">Nucleo</span><span title="memantle">Manto</span></div>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        </div>
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+				<div class="counter wow flipInX1">
+			                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+			             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+			                  <div data-indicator="km" class="circlecounter"><span  id="counter1">0</span></div>
+			                  <div data-indicator="extinf"><span> Millones de kilometros</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+   				<div class="counter wow flipInX2">
+                    <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                    <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+  				  <div data-indicator="orb" data-toggle="tooltip" title="Se toma como orbita lo que tarda el sol en dar una vuelta alrededor del centro de la galaxia, esto se conoce tambien como aÃ±o cosmico" class="circlecounter"><span  id="counter2">0</span></div>
+                    <div data-indicator="extinf"><span>Millones de años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+   			<div class="counter wow flipInX3">
+                     <i class="icon-high-temperature"></i>
+                     <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+             <!-- PRIMERA BARRA TEMP -->
+                     <div class="barcounter">
+                     	<div data-indicator="tempsun1" class="wow temp1" data-toggle="tooltip" data-placement="left" title="Temperatura en la cromósfera (atmósfera media)"><span id="counter3">0</span><span>&nbsp;°C</span>
+    				    </div>
+    				</div>
+    		 <!-- SEGUNDA BARRA TEMP -->
+    				<div class="barcounter">
+					    <div data-indicator="tempsun2" class="wow temp2" data-toggle="tooltip" data-placement="left" title="Temperatura en la superficie"><span id="counter4">0</span><span>&nbsp;°C</span>
+					    </div>
+    				</div>
+    		<!-- TERCERA BARRA TEMP -->
+    				<div class="barcounter">
+			             <div data-indicator="tempsun3" class="wow temp3" data-toggle="tooltip" data-placement="left" title="Temperatura en el nucleo del sol"><span id="counter5">0</span><span>&nbsp;°C</span>
+			    		</div>
+    				</div>
+    		<!-- CUARTA BARRA TEMP -->
+    				<div class="barcounter">
+			             <div data-indicator="tempsun4" class="wow temp4" data-toggle="tooltip" data-placement="left" title="Temperatura en la Corona (atmósfera alta)"><span id="counter6">0</span><span>&nbsp;°C</span>
+			    		</div>
+    				</div>
+    		<!-- FIN BARRA TEMP -->
+                     <div data-indicator="extinf"><span>Temperaturas aproximadas</br>según alturas máximas de las atmosferas</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+	                <div class="counter wow flipInX4">
+	                  <i style="transform: rotatey(180deg);" class="icon-video-camera"></i>
+	                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+	                  <p>El Sol y películas relacionadas al astro mayor de nuestro sistema planetario.</p>
+
+                 </div>
+         </div>
+  </div>
+</div>
+</article>
+<!-- PLANETA MERCURIO -->
+<article id="pmercury" class="mercurybg" style="margin-top:3860px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Mercurio</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#solsun').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="sun" align="left" data-toggle="tooltip" title="Viajar al Sol" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pvenus').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="venus" align="left" data-toggle="tooltip" title="Viajar a Venus" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+            <object class="planetnimated" type="text/html" data="images/planets/animated/mercury.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" id="mercuryv2" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter7">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter8">0</span></div>
+                  <div data-indicator="extinf"><span>Días terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter9">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter10">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <i style="transform: rotatey(180deg);" class="icon-video-camera"></i>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+              <!-- CAROUSEL SLIDE -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Venus/venus01.jpg" data-toggle="modal" data-target="#mercury01">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus02.jpg" data-toggle="modal" data-target="#mercury02">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus03.jpg" data-toggle="modal" data-target="#mercury03" >
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+   <video id="mercuryv" class="vidmercury" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/mercury.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/mercury.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/mercury.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS MERCURY-->
+<!-- MERCURY 01 -->
+<div id="mercury01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+  <video id="venus01vid"  muted loop>
+  <source src="videos/venus/01/pb.webm" type="video/webm">
+  <source src="videos/venus/01/pb.mp4" type="video/mp4">
+  </video>
+  <div class="modal-footer">
+  <h4>Planet Bur (1962)</h4>
+  <div style="height:290px"><p>Tres naves, Sirius, Vega, y Capella tienen como destino investigar a Venus, en su viaje una de ellas es envestida y destruida por un meteorito por lo que deben seguir con su mision en el planeta. Esta película Sovietica que cosechó buenas criticas a nivel local y mundial tiene ciertos puntos a remarcar y es que grandes films han basado efectos y diseños de esta película para las propias, como el caso de Star Wars (1977) con el famoso Hovercraft que usa Luke en Mos Eisley o el robot de Lost in Space (1965), sin duda alguna unos visionarios en lo que respecta a la ciencia ficción.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END MERCURY 01 -->
+<!-- MERCURY 02 -->
+<div id="mercury02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+  <video id="venus02vid"  muted loop>
+  <source src="videos/venus/02/fsov.webm" type="video/webm">
+  <source src="videos/venus/02/fsov.mp4" type="video/mp4">
+  </video>
+  <div class="modal-footer">
+  <h4>First Spaceship on Venus (1960)</h4>
+  <div style="height:250px"><p>Esta película germano/polaca basada en la novela The Astronauts de Stanisław Lem, nos cuenta la historia de un grupo de astronautas que son enviados a Venus para investigar la procedencia de un artefacto encontrado en la tierra que seria supuestamente de una nave alienigena estrellada hace tiempo.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END MERCURY 02 -->
+<!-- MERCURY 03 -->
+<div id="mercury03" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+  <video id="venus03vid"  muted loop>
+  <source src="videos/venus/03/vttp.webm" type="video/webm">
+  <source src="videos/venus/03/vttp.mp4" type="video/mp4">
+  </video>
+  <div class="modal-footer">
+  <h4>Voyage to the Prehistoric Planet (1965)</h4>
+  <div style="height:250px"><p>Película Estadounidense remake de la versión sovietica "Planet Bur" donde un grupo de astronautas que serian los primeros en pisar Venus, se topan con un mundo prehistorico al mejor estilo Jurassic Park.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END MERCURY 03 -->
+<!-- PLANETA VENUS -->
+<article id="pvenus" class="mercurybg" style="margin-top:3353px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Venus</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pmercury').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="mercurio" align="left" data-toggle="tooltip" title="Viajar a Mercurio" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pearth').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="earth" align="left" data-toggle="tooltip" title="Viajar a la Tierra" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                      <object class="planetnimated" type="text/html" data="images/planets/animated/venus.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter11">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter12">0</span></div>
+                  <div data-indicator="extinf"><span>Días terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter13">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter14">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Venus/venus01.jpg" data-toggle="modal" data-target="#venus01">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus02.jpg" data-toggle="modal" data-target="#venus02">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus03.jpg" data-toggle="modal" data-target="#venus03" >
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+   <video id="venusv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/venus.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/venus.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/venus.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS VENUS-->
+<!-- VENUS 01 -->
+<div id="venus01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+  <div class="modal-footer">
+  <h4>Planet Bur (1962)</h4>
+  <div style="height:290px"><p>Tres naves, Sirius, Vega, y Capella tienen como destino investigar a Venus, en su viaje una de ellas es envestida y destruida por un meteorito por lo que deben seguir con su mision en el planeta. Esta película Sovietica que cosechó buenas criticas a nivel local y mundial tiene ciertos puntos a remarcar y es que grandes films han basado efectos y diseños de esta película para las propias, como el caso de Star Wars (1977) con el famoso Hovercraft que usa Luke en Mos Eisley o el robot de Lost in Space (1965), sin duda alguna unos visionarios en lo que respecta a la ciencia ficción.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 01 -->
+<!-- VENUS 02 -->
+<div id="venus02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+    <div class="modal-footer">
+  <h4>First Spaceship on Venus (1960)</h4>
+  <div style="height:250px"><p>Esta película germano/polaca basada en la novela The Astronauts de Stanisław Lem, nos cuenta la historia de un grupo de astronautas que son enviados a Venus para investigar la procedencia de un artefacto encontrado en la tierra que seria supuestamente de una nave alienigena estrellada hace tiempo.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 02 -->
+<!-- VENUS 03 -->
+<div id="venus03" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+  <video id="venus03vid"  muted loop>
+  <source src="videos/venus/03/vttp.webm" type="video/webm">
+  <source src="videos/venus/03/vttp.mp4" type="video/mp4">
+  </video>
+  <div class="modal-footer">
+  <h4>Voyage to the Prehistoric Planet (1965)</h4>
+  <div style="height:250px"><p>Película Estadounidense remake de la versión sovietica "Planet Bur" donde un grupo de astronautas que serian los primeros en pisar Venus, se topan con un mundo prehistorico al mejor estilo Jurassic Park.</p>
+  </div>
+  <button type="button" class="btnclosefilm" id="play"><i class="fa fa-arrow-circle-o-right"></i></button>
+  <button type="button" class="btnclosefilm" id="pause"><i class="fa fa-pause"></i></button>
+  <button type="button" class="btnclosefilm" id="closestop" data-dismiss="modal">Cerrar</button>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 03 -->
+<!-- PLANETA TIERRA -->
+<article id="pearth" class="mercurybg" style="margin-top:2800px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Tierra</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9 responsivh" align="center">
+<a class="atravelship" onclick="$('#pvenus').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="venus" align="left" data-toggle="tooltip" title="Viajar a Venus" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pmars').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="mars" align="left" data-toggle="tooltip" title="Viajar a Marte" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9 responsivh" align="center">
+                 <div class="boxplanet wow">
+                      <object class="planetnimated" type="text/html" data="images/planets/animated/earth.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9 responsivh" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9 responsivh" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter15">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9 responsivh" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter16">0</span></div>
+                  <div data-indicator="extinf"><span>Días</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9 responsivh" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter17">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter18">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9 responsivh" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Venus/venus01.jpg" data-toggle="modal" data-target="#venus01">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="earthmoonv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/earthmoon.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/earthmoon.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/earthmoon.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+
+</article>
+<!-- MODAL PELICULAS tierra-->
+<!-- tierra 01 -->
+<div id="venus01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="deartho2" class="modal-content martianbg">
+    	<div id="eartho"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>s
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END EARTH 01 -->
+<!-- END EARTH -->
+<!-- PLANETA MARTE -->
+<article id="pmars" class="mercurybg" style="margin-top:5193px">
+<div class="continfo">
+	<div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Marte</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pearth').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="earth" align="left" data-toggle="tooltip" title="Viajar a la Tierra" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pasteroids').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="asteroids" align="left" data-toggle="tooltip" title="Viajar al cinturon de asteroides" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                   <object class="planetnimated" type="text/html" data="images/planets/animated/mars.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter19">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter20">0</span></div>
+                  <div data-indicator="extinf"><span>Días terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter21">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter22">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+    <li data-target="#marsCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/missiontomarscover.jpg" data-toggle="modal" data-target="#mars03">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="earthv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/mars.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/mars.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/mars.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS MARTE-->
+<!-- MARTIAN 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END MARTIAN 01 -->
+<!-- MARTIAN 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END MARTIAN 02 -->
+<!-- MARTIAN 03 -->
+<div id="mars03" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content missiontomarsbg">
+    	<div id="missiontomars"></div>
+     <div class="modal-footer">
+  <h5>Mission to Mars (2000)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END MARTIAN 03 -->
+<!-- END MARS -->
+
+<!--                             CINTURON DE ASTEROIDES                                 -->
+<article id="pasteroids" class="mercurybg" style="margin-top:5193px">
+ <div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Cinturon de asteroides</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pmars').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="mars" align="left" data-toggle="tooltip" title="Viajar a Marte" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pjupiter').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="jupiter" align="left" data-toggle="tooltip" title="Viajar a Jupíter" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                      <object class="planetnimated" type="text/html" data="images/planets/animated/ceres.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter23">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px" class="icon-6-moon wow"></i>
+                  <h2 class="orbitindicator"><span>C</span>eres + cinturon</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter24">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>M</span>asa total</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter25">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter26">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="earthv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/asteroids.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/asteroids.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/asteroids.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS ASTEROIDES-->
+<!-- ASTEROIDE 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END ASTEROIDE 01 -->
+<!-- ASTEROIDE 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END ASTEROIDE 02 -->
+<!-- END CINTURON DE ASTEROIDES -->
+
+
+<!-- PLANETA JUPITER -->
+<article id="pjupiter" class="mercurybg" style="margin-top:5193px">
+ <div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Jupiter</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pasteroids').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="asteroids" align="left" data-toggle="tooltip" title="Viajar al cinturon de asteroides" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#psaturn').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="saturn" align="left" data-toggle="tooltip" title="Viajar a Saturno" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                      <object class="planetnimated" type="text/html" data="images/planets/animated/jupiter.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        </div>
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecounter"><span  id="counter27">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter28">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter29">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter30">0</span></div>
+                  <div data-indicator="extinf"><span>Minima / Maxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="earthv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/jupiter.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/jupiter.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/jupiter.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS JUPITER-->
+<!-- JUPITER 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END JUPITER 01 -->
+<!-- JUPITER 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END JUPITER 02 -->
+<!-- END JUPITER -->
+
+<!-- PLANETA SATURNO -->
+<article id="psaturn" class="mercurybg" style="margin-top:5193px">
+ <div class="continfo">
+	<div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">Saturno</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-2 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pjupiter').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="jupiter" align="left" data-toggle="tooltip" title="Viajar a Jupiter" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#puranus').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="saturn" align="left" data-toggle="tooltip" title="Viajar a Urano" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-5 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                    <object class="planetnimated" type="text/html" data="images/planets/animated/saturn.html" width="480" height="280"></object>   
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-2 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecountermiles"><span  id="counter31">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter32">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter33">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter34">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima (aprox) / Máxima (aprox) </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="saturnv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/saturn.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/saturn.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/saturn.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS SATURNO-->
+<!-- SATURNO 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END SATURNO 01 -->
+<!-- SATURNO 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END SATURNO 02 -->
+<!-- END SATURNO -->
+<!--                             PLANETA URANO                               -->
+<article id="puranus" class="mercurybg" style="margin-top:5193px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">URANO</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-2 col-md-9" align="center">
+<a class="atravelship" onclick="$('#psaturn').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="asteroids" align="left" data-toggle="tooltip" title="Viajar a Saturno" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#pneptune').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="saturn" align="left" data-toggle="tooltip" title="Viajar a Neptuno" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-5 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                      <img style="width:160%;" src="images/planets/uranus.gif">
+                      <div class="tierracore"><span title="mecurt">Corteza</span><span title="mecore">Nucleo</span><span title="memantle">Manto</span></div>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-2 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecountermiles"><span  id="counter35">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter36">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter37">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter38">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+    <video id="uranusv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/uranus.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/uranus.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/uranus.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS URANO-->
+<!-- URANO 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END URANO 01 -->
+<!-- URANO 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END URANO 02 -->
+<!-- END URANO -->
+
+<!--                        PLANETA NEPTUNO                  -->
+<article id="pneptune" class="mercurybg" style="margin-top:5193px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">NEPTUNO</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#puranus').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="uranus" align="left" data-toggle="tooltip" title="Viajar a Neptuno" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#ppluto').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="pluto" align="left" data-toggle="tooltip" title="Viajar a Plutón" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                      <object class="planetnimated" type="text/html" data="images/planets/animated/neptune.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecountermiles"><span  id="counter39">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter40">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter41">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter42">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+</div>
+     <video id="earthv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/neptune.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/neptune.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/neptune.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+
+</article>
+<!-- MODAL PELICULAS NEPTUNO-->
+<!-- NEPTUNO 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END NEPTUNO 01 -->
+<!-- NEPTUNO 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END NEPTUNO 02 -->
+<!-- END NEPTUNO -->
+
+<!--                              PLANETA PLUTON                            -->
+<article id="ppluto" class="mercurybg" style="margin-top:5193px">
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+        <div class="indicatorplanet wow fadeInOut"><h3 class="wow flash">PLUTON (planeta enano)</h3></div>
+         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-4 col-md-9" align="center">
+<a class="atravelship" onclick="$('#pneptune').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="uranus" align="left" data-toggle="tooltip" title="Viajar a Neptuno" data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow1">
+			<line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+</svg>
+</div>
+</a>
+<a  class="atravelship" onclick="$('#ppluto').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+<div class="travelship" data-planet="pluto" align="left" data-toggle="tooltip" title="Viajar a ..." data-placement="bottom">
+<svg class="circlesvg wow fadeInLeft" width="80px" height="80px" viewBox="0 0 100 100" >
+    	<g id="Layer1">
+			<circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+			<circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+		</g>
+		<g id="arrow2">
+			<line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+			<line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+		</g>
+	</svg>
+</div>
+</a>
+
+            </div>
+         <!-- SEGUNDA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+                 <div class="boxplanet wow">
+                     <object class="planetnimated" type="text/html" data="images/planets/animated/pluto.html" width="480" height="280"></object>
+                 </div>
+
+            </div>
+          <!-- TERCERA COLUMNA -->
+            <div class="col-lg-4 col-md-9" align="center">
+
+
+  			</div>
+
+         </div>
+        <!-- FIN PRIMERA FILA -->
+        <!-- SEGUNDA FILA -->
+        <div class="row">
+        <div class="col-lg-3 col-md-9" align="center">
+			<div class="counter wow flipInX1">
+                <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+             	<h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                  <div data-indicator="km" class="circlecountermiles"><span  id="counter43">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                 <div class="counter wow flipInX2">
+                  <i style="margin-top:-27px"class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2></br>
+				  <div data-indicator="orb" class="circlecounter"><span  id="counter44">0</span></div>
+                  <div data-indicator="extinf"><span>Años terrestres</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX3">
+                  <i class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2></br>
+                  <div data-indicator="tempn" class="circlecounter"><span  id="counter45">0</span></div>
+                  <div data-indicator="tempd" class="circlecounter"><span  id="counter46">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+                 </div>
+         </div>
+         <div class="col-lg-3 col-md-9" align="center">
+                <div class="counter wow flipInX4">
+                  <div><img class="moviecounter" src="images/moviecounter.gif"><i style="transform: rotatey(180deg);" class="icon-video-camera"></i></div>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2></br>
+                  <!-- CAROUSEL SLIDE -->
+                  <div id="marsCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#marsCarousel" data-slide-to="0" class="active"></li>
+ 	<li data-target="#marsCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Mars/themartiancover.jpg" data-toggle="modal" data-target="#mars01">
+    </div>
+    <div class="item">
+     <img src="images/Slide/Mars/planetarojoncover.jpg" data-toggle="modal" data-target="#mars02">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#marsCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#marsCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+                 </div>
+         </div>
+  </div>
+</div>
+        </div>
+     <video id="earthv" width="auto" height="auto" loop preload muted>
+      <source src="images/planets/videobg/pluto.mp4" type='video/mp4; codecs="avc1,mp4a"' />
+      <source src="images/planets/videobg/pluto.ogv" type='video/ogg; codecs="theora,vorbis"' />
+      <source src="images/planets/videobg/pluto.webm" type='video/webm; codecs="vp8,vorbis"' />
+    </video>
+</article>
+<!-- MODAL PELICULAS PLUTON-->
+<!-- PLUTON 01 -->
+<div id="mars01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content martianbg">
+    	<div id="damon"></div>
+     <div class="modal-footer">
+  <h5>The Martian (2015)</h5>
+  <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+  </div>
+  <div class="buttoner" align="left"><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END PLUTON 01 -->
+<!-- PLUTON 02 -->
+<div id="mars02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div id="damon2" class="modal-content redplanetbg">
+    	<div id="redplanet"></div>
+     <div class="modal-footer">
+  <h5>Red Planet(2000)</h5>
+  <div><p>En el año 2050 la tierra esta en crisis por una severa superpoblación y contaminación, por este motivo se envian a Marte algas para que produzcan oxigeno. Luego de 12 años la producción de oxigeno cae drasticamente sin razon y envian una mision tripulada para que investigue la situación. Una vez superado diferentes problemas y pudiendo aterrizar en el planeta rojo, se darán cuenta que la atmosfera posee en realidad más oxigeno del que creian. </p>
+  </div>
+  <div class="buttoner" align="left"><div data-toggle="tooltip" title="Marte posee el 40% de la gravedad de la tierra"><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i></div><div data-toggle="tooltip" title="Recaudación: $33 millones"><i  style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i></div><div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i></div><div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i></div></div>
+  </div>
+  </div>
+  </div>
+</div>
+<!-- END PLUTON 02 -->
+<!-- END PLUTON -->
+
+
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('#preloader').fadeOut('slow');
+	$('body').css({'overflow':'hidden'});
+	})
+</script>
+</body>
+</html>

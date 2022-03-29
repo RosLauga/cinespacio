@@ -1,0 +1,1352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CinEspacio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--ESTLIOS -->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index2.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/milkyway.css">
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="js/scrollbars/jquery.custom-scrollbar.css">
+
+<!--SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/scrollbars/jquery.custom-scrollbar.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/animatescroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/waypoints/jquery.animateNumbers.min.js"></script>
+<script src="js/waypoints/jQuerySimpleCounter.js"></script>
+<script src="js/waypoints/jquery.waypoints.min.js"></script>
+<!-- Script ScrollMagic
+   ================================================== -->
+<script src="js/js/lib/greensock/TweenMax.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script>
+var controller = new ScrollMagic.Controller();
+</script>
+
+<script>
+new WOW().init();
+</script>
+<script>
+    smoothScroll.init();
+</script>
+<script src="js/mouse.parallax.js"></script>
+<script src="js/three.js-master/src/Three.js"></script>
+<script src="js/mouse.parallaxpreload.js"></script>
+<script src="js/mouse.parallaxmodal.js"></script>
+<script>
+$(document).ready(function() {
+				$('.solar-syst').mouseParallax({ moveFactor: 300 });
+});
+</script>
+<script>
+$(document).ready(function() {
+				$('#status').mouseParallaxpreload({ moveFactor:100 });
+				$('.icon-11-black-hole').mouseParallaxpreload({ moveFactor:5 });
+				$('#damon').mouseParallaxmodal({ moveFactor:10 });
+				$('#redplanet').mouseParallaxmodal({ moveFactor:10 });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style>
+.demo {
+    height:400px;
+    width:100%;
+      }
+</style>
+
+</head>
+
+<body>
+<div id="preloader">
+	<div id="status" class="mouse-bg"><i class="icon-45-astronaut"></i></div>
+    <i class="icon-11-black-hole"></i>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).on('load', function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'hidden'});
+			//$('.indicatorplanet').delay(350).addClass('wow fadeInOut');
+			$('.welcome').delay(350).addClass('wow flash');
+			$('#solar').delay(350).addClass('zoomIn ');
+
+		})
+	//]]>
+</script>
+<div id="sonda"><i class="icon-23-sputnik"></i></div>
+<div id="top" style="margin-bottom:55px" class="clearfix container-width">
+		<div class="row">
+        	<div class="col-lg-12 col-md-12">
+<div class="indicatorplanet"><h3 class="welcome">Bienvenido a</br>Cine + Espacio</h3></div>
+                 <div id="solar" class="solar-syst mouse-bg">
+
+                    <div class="pluto"></div>
+     				<div class="uranus"></div>
+					<div class="neptune"></div>
+                    <div class="saturn"><a href="#"><div id="saturn"></div></a></div>
+                    <div class="jupiter"><a href=""><div id="jupiter"></div></a></div>
+                    <div class="asteroids-belt"></div>
+                  <a onclick="$('#pmars').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="mars" data-planet="mars"><div id="mars"></div></div>
+                  </a>
+                  <a onclick="$('#pearth').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="earth" data-planet="earth"><div id="earth"></div></div>
+                  </a>
+				  <a onclick="$('#pvenus').animatescroll({scrollSpeed:3000,easing:'swing'});">
+					<div class="venus" data-planet="venus"><div id="venus"></div></div>
+				  </a>
+				  <a onclick="$('#pmercury').animatescroll({scrollSpeed:3000,easing:'swing'});">
+                    <div class="mercury" data-planet="mercurio"><div class="mercuryplanet"></div></div>
+                  </a>
+                  <a onclick="$('#solsun').animatescroll({scrollSpeed:2000,easing:'easeInOutExpo'});">
+                    <div class="sun" data-planet="sun"><div id="sun"></div></div>
+                  </a>
+
+       	   </div>
+
+        	</div>
+        </div>
+</div>
+        <!-- ESTRELLA SOL -->
+<div style="margin-top:380px;margin-bottom: 150px" class="indicatorplanet"><h3 class="">Sol (estrella)</h3></div>
+<article id="solsun" >
+<div class="continfo">
+    <div class="clearfix container-width">
+    <!-- PRIMERA FILA -->
+        <div class="row">
+        
+                 <!-- PRIMERA COLUMNA -->
+      <div class="col-lg-3 col-md-9" align="">
+        <a class="atravelship" onclick="$('#pmercury').animatescroll({scrollSpeed:3160,easing:'easeInOutExpo'});" >
+<div class="travelship" data-planet="mercurio" align="left" data-toggle="tooltip" title="Viajar a Mercurio" data-placement="right">
+  <!-- ICONUP -->
+    <svg class="circlesvg wow fadeInLeft" width="60px" height="60px" viewBox="0 0 100 100" >
+      <g id="Layer1">
+      <circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+      <circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+    </g>
+    <g id="arrow2">
+      <line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+      <line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+    </g>
+  </svg>
+</div>
+</a>
+        <div style="margin-top:120px;width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX1">
+                      <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:1px;transform:scale(0.1,0.1);opacity:0"></i>
+                    <h2 class="distindicator"><span>D</span>istancia recorrida</h2></br>
+                        <div data-indicator="km" class="circlecounter"><span  id="counter1">0</span></div>
+                        <div data-indicator="extinf"><span> Millones de kilometros</span></div>
+             </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX2">
+                  <i style="margin-top:-10px;font-size: 30px" class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2>
+            <div data-indicator="orb" data-toggle="tooltip" title="Se toma como orbita lo que tarda el sol en dar una vuelta alrededor del centro de la galaxia, esto se conoce tambien como aÃ±o cosmico" class="circlecounter"><span  id="counter2">0</span></div>
+                    <div data-indicator="extinf"><span>Millones de años terrestres</span></div>
+          </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+                  <div class="counter wow flipInX3">
+                  <i style="margin-top:-11px;font-size: 30px" class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2>
+             <!-- PRIMERA BARRA TEMP -->
+                     <div class="barcounter">
+                      <div data-indicator="tempsun1" class="wow temp1" data-toggle="tooltip" data-placement="right" title="Temperatura en la cromósfera (atmósfera media)"><span id="counter3">0</span><span>&nbsp;°C</span>
+                </div>
+            </div>
+         <!-- SEGUNDA BARRA TEMP -->
+            <div class="barcounter">
+              <div data-indicator="tempsun2" class="wow temp2" data-toggle="tooltip" data-placement="right" title="Temperatura en la superficie"><span id="counter4">0</span><span>&nbsp;°C</span>
+              </div>
+            </div>
+        <!-- TERCERA BARRA TEMP -->
+            <div class="barcounter">
+                   <div data-indicator="tempsun3" class="wow temp3" data-toggle="tooltip" data-placement="right" title="Temperatura en el nucleo del sol"><span id="counter5">0</span><span>&nbsp;°C</span>
+              </div>
+            </div>
+        <!-- CUARTA BARRA TEMP -->
+            <div class="barcounter">
+                   <div data-indicator="tempsun4" class="wow temp4" data-toggle="tooltip" data-placement="right" title="Temperatura en la Corona (atmósfera alta)"><span id="counter6">0</span><span>&nbsp;°C</span>
+              </div>
+            </div>
+        <!-- FIN BARRA TEMP -->
+                     <div data-indicator="extinf"><span>Temperaturas aproximadas</br>según alturas máximas de las atmosferas</span></div>
+                 </div>
+        </div>
+      </div>
+         <!-- SEGUNDA COLUMNA -->
+      <div class="col-lg-3 col-md-9" align="">
+        <div class="firstsonda wow fadeIn" align="center">
+          <div class="contmission">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 minh" align="center">
+                <div class="timelinetitle"><span>Misiones</span></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed1">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed1">
+              <div class="col-lg-5 col-md-9 minhpi">
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1960/69</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toggle="tooltip" title="PIONEER 5 (1960), PIONEER 6 (1965),PIONEER 7 (1966),PIONEER 8 (1967),PIONEER 9 (1968)">(USA) Misiones PIONEER </span>
+              </div>
+            </div>
+            <div class="row  wow fade delayed2">
+              <div class="col-lg-6 col-md-9 timeline minh"></div>
+              <div class="col-lg-6 col-md-9 minh"></div>
+            </div>
+            <div class="row rhovert wow fade delayed2">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toggle="tooltip" title="Helios A (1974), Helios B (1976)">(USA-RDA) Misiones Helios</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1974/76</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed3">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed3">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1983</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(USA) ISEE3</span>
+              </div>
+            </div>
+             <div class="row wow fade delayed4">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed4">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toggle="tooltip" title="Ulysses (USA/ESSA-1990), Wind (USA-1994), ACE(USA-1997)">(USA, USA/ESSA) Misiones </span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1990/97</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed5">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed5">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2000/15</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span data-toggle="tooltip" title="Génesis (USA-2001), STEREO A y B (USA/RU-2006), DSCOVR(USA-2015)">(USA, USA/RU) Misiones </span>
+              </div>
+            </div>
+            <div class="row wow fade delayed6">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed6">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>ESSA) Solar Orbiter (en procreso)</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2018</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+                       
+          </div>
+          </div>
+          </div>
+         <!-- TERCERA COLUMNA -->
+      <div class="col-lg-6 col-md-9" align="center">
+          <div class="col-lg-12 col-md-12" align="center">
+            <div class="boxplanet wow">
+              <object class="planetnimated" type="text/html" data="images/planets/animated/sun.html" width="auto" height="330"></object>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12" align="center">
+              <div style="width:80%;height: auto;float;left;">
+          <div class="counter wow flipInX4">
+                  <i style="transform: rotatey(180deg);" class="icon-video-camera"></i>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2>
+              <!-- CAROUSEL SLIDE -->
+                  <div id="myCarouselsun" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarouselsun" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarouselsun" data-slide-to="1"></li>
+                    <li data-target="#myCarouselsun" data-slide-to="2"></li>
+                    <li data-target="#myCarouselsun" data-slide-to="3"></li>
+                  </ol>
+
+              <!-- Wrapper for slides -->
+            <div class="carousel-inner slidermovie" role="listbox">
+              <div class="item active">
+                <img src="images/Slide/Sun/sunshinethumb.png" data-toggle="modal" data-target="#sun01">
+              </div>
+              <div class="item">
+                <img src="images/Slide/Sun/knowingthumb.png" data-toggle="modal" data-target="#sun02">
+              </div>
+              <div class="item">
+                <img src="images/Slide/Sun/solarattackthumb.png" data-toggle="modal" data-target="#sun03">
+              </div>
+              <div class="item">
+                <img src="images/Slide/Sun/solarcrisisthumb.png" data-toggle="modal" data-target="#sun04">
+              </div>
+             </div>
+              <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarouselsun" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarouselsun" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+              </a>
+            </div>
+                 <!-- END CAROUSEL SLIDE -->
+          </div>
+        </div>
+          </div>
+
+      </div>
+  </div>
+        <!-- FIN PRIMERA FILA -->
+  </div>  
+</div>
+</article>
+<!--  FIN SOL-->
+<!-- MODAL PELICULAS SOL-->
+<!-- SOL 01 -->
+<div id="sun01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content sunshinebg">
+     <div class="modal-footer">
+        <h5>Sunshine (2007)</h5>
+          <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+          </div>
+          <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;" class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+          </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- END SOL 01 -->
+<!-- SOL 02 -->
+<div id="sun02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content knowingbg">
+     <div class="modal-footer">
+        <h5>Knowing (2009)</h5>
+          <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+          </div>
+          <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;" class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+          </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- END SOL 02 -->
+<!-- SOL 03 -->
+<div id="sun03" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content solarattackbg">
+     <div class="modal-footer">
+        <h5>Solar Attack (2006)</h5>
+          <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+          </div>
+          <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;" class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+          </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- END SOL 03 -->
+<!-- SOL 04 -->
+<div id="sun04" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content solarcrisisbg">
+     <div class="modal-footer">
+        <h5>Solar Crisis (1990)</h5>
+          <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+          </div>
+          <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;" class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+          </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- END SOL 04 -->
+<div style="margin-top:3860px;margin-bottom:150px" class="indicatorplanet"><h3 class="">Mercurio</h3></div>
+<!-- PLANETA MERCURIO -->
+<article id="pmercury" >
+<div class="continfo">
+    <div class="clearfix container-width">
+		<!-- PRIMERA FILA -->
+        <div class="row">
+                         <!-- PRIMERA COLUMNA -->
+			<div class="col-lg-3 col-md-9" align="">
+        <a class="atravelship" onclick="$('#solsun').animatescroll({scrollSpeed:3160,easing:'easeInOutExpo'});" >
+          <div class="travelship" data-planet="sun" align="left" data-toggle="tooltip" title="Viajar al Sol" data-placement="bottom">
+           <svg class="circlesvg wow fadeInLeft" width="60px" height="60px" viewBox="0 0 100 100" >
+              <g id="Layer1">
+                <circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+                <circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+              </g>
+              <g id="arrow1">
+                <line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+               <line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a  class="atravelship" onclick="$('#pvenus').animatescroll({scrollSpeed:2800,easing:'easeInOutExpo'});" >
+          <div class="travelship" data-planet="venus" align="left" data-toggle="tooltip" title="Viajar a Venus" data-placement="bottom">
+          <svg class="circlesvg wow fadeInLeft" width="60px" height="60px" viewBox="0 0 100 100" >
+            <g id="Layer1">
+              <circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+              <circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+            </g>
+            <g id="arrow2">
+              <line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+              <line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+            </g>
+            </svg>
+          </div>
+        </a>
+        <div style="margin-top:120px;width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX1">
+              <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:-1px;transform:scale(0.1,0.1);opacity:0"></i>
+                <h2 class="distindicator"><span>D</span>istancia recorrida</h2>
+                  <div data-indicator="km" class="circlecounter" align="center"><span  id="counter7">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+          </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX2">
+                  <i style="margin-top:-10px;font-size: 30px" class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2>
+            <div data-indicator="orb" class="circlecounter" align="center"><span  id="counter8">0</span></div>
+            <div data-indicator="extinf"><span>Días terrestres</span></div>
+          </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX3">
+                  <i style="margin-top:-11px;font-size: 30px" class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2>
+                  <div data-indicator="tempn" class="circlecountermiles" align="center"><span  id="counter9">0</span></div>
+                  <div data-indicator="tempd" class="circlecountermiles" align="center"><span  id="counter10">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+          </div>
+        </div>
+      </div>
+         <!-- SEGUNDA COLUMNA -->
+      <div class="col-lg-3 col-md-9" align="">
+        <div class="firstsonda wow fadeIn" align="center">
+          <div class="contmission">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 minh" align="center">
+                <div class="timelinetitle"><span>Misiones</span></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed1">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed1">
+              <div class="col-lg-5 col-md-9 minhpi">
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1974</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(USA) MARINER 10</span>
+              </div>
+            </div>
+            <div class="row  wow fade delayed2">
+              <div class="col-lg-6 col-md-9 timeline minh"></div>
+              <div class="col-lg-6 col-md-9 minh"></div>
+            </div>
+            <div class="row rhovert wow fade delayed2">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(USA) MESSENGER</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2008</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed3">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed3">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2017</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(ESSA) BepiColombo (en proceso)</span>
+              </div>
+            </div>
+
+                 </div>
+            </div>
+          </div>
+         <!-- TERCERA COLUMNA -->
+      <div class="col-lg-6 col-md-9" align="center">
+          <div class="col-lg-12 col-md-12" align="center">
+            <div class="boxplanet wow">
+              <object class="planetnimated" type="text/html" data="images/planets/animated/mercury.html" width="auto" height="330"></object>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12" align="center">
+              <div style="width:80%;height: auto;float;left;">
+          <div class="counter wow flipInX4">
+                  <i style="transform: rotatey(180deg);" class="icon-video-camera"></i>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2>
+              <!-- CAROUSEL SLIDE -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0"></li>
+                  </ol>
+
+              <!-- Wrapper for slides -->
+            <div class="carousel-inner slidermovie" role="listbox">
+              <div class="item active">
+                <img src="images/Slide/Mercury/collisionthumb.png" data-toggle="modal" data-target="#mercury01">
+              </div>
+             </div>
+              <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+              </a>
+            </div>
+                 <!-- END CAROUSEL SLIDE -->
+          </div>
+        </div>
+          </div>
+
+      </div>
+  </div>
+        <!-- FIN PRIMERA FILA -->
+  </div>  
+</div>
+ 
+</article>
+<!-- MODAL PELICULAS MERCURY-->
+<!-- MERCURY 01 -->
+<div id="mercury01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content mercurybg">
+     <div class="modal-footer">
+        <h5>Collition Earth (2011)</h5>
+          <div><p>Luego de haber aterrizado en Marte el botanico Mark y la tripulación que lo acompaña deben dejar el planeta rojo por una tormenta agresiva. Mark tratando de lograr que la nave pueda despegar es alcanzado por escombros y herido, la tripulación logra escapar pero lo da por muerto. Lejos, muy lejos del planeta tierra Mark se da cuenta que debe poner su ingenio para contactarse y sobrevivir hasta el rescate.</p>
+          </div>
+          <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+          </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- END MERCURY 01 -->
+<!-- PLANETA VENUS -->
+<div style="margin-top:3353px;margin-bottom:150px" class="indicatorplanet"><h3 class="">Venus</h3></div>
+<article id="pvenus">
+<div class="continfo">
+    <div class="clearfix container-width">
+    <!-- PRIMERA FILA -->
+        <div class="row">
+                         <!-- PRIMERA COLUMNA -->
+      <div class="col-lg-3 col-md-9" align="">
+        <a class="atravelship" onclick="$('#pmercury').animatescroll({scrollSpeed:2800,easing:'easeInOutExpo'});" >
+          <div class="travelship" data-planet="sun" align="left" data-toggle="tooltip" title="Viajar a Mercurio" data-placement="bottom">
+           <svg class="circlesvg wow fadeInLeft" width="60px" height="60px" viewBox="0 0 100 100" >
+              <g id="Layer1">
+                <circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+                <circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+              </g>
+              <g id="arrow1">
+                <line x1="55px" y1="50px" x2="50px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+               <line x1="55px" y1="50px" x2="60px" y2="59px" stroke="#fff" stroke-width="2px"></line>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a  class="atravelship" onclick="$('#pearth').animatescroll({scrollSpeed:3000,easing:'swing'});" >
+          <div class="travelship" data-planet="venus" align="left" data-toggle="tooltip" title="Viajar a la Tierra" data-placement="bottom">
+          <svg class="circlesvg wow fadeInLeft" width="60px" height="60px" viewBox="0 0 100 100" >
+            <g id="Layer1">
+              <circle id="circle1" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+              <circle id="circle2" cx="55px" cy="55px" r="35" stroke="#fff" stroke-width="2px" fill="transparent"></circle>
+            </g>
+            <g id="arrow2">
+              <line x1="55px" y1="58px" x2="50px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+              <line x1="55px" y1="58px" x2="60px" y2="49px" stroke="#fff" stroke-width="2px"></line>
+            </g>
+            </svg>
+          </div>
+        </a>
+        <div style="margin-top:120px;width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX1">
+              <i class="icon-36-lander wow fadeInDown" style="opacity:0"></i><i class="icon-smk wow fadeInScale1" style="margin-top:-1px;transform:scale(0.1,0.1);opacity:0"></i>
+                <h2 class="distindicator"><span>D</span>istancia recorrida</h2>
+                  <div data-indicator="km" class="circlecounter" align="center"><span  id="counter11">0</span></div>
+                  <div data-indicator="extinf"><span> Millones de kilometros desde el Sol</span></div>
+          </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX2">
+                  <i style="margin-top:-10px;font-size: 30px" class="icon-orbit wow rotateIn"></i>
+                  <h2 class="orbitindicator"><span>O</span>rbita</h2>
+            <div data-indicator="orb" class="circlecounter" align="center"><span  id="counter12">0</span></div>
+            <div data-indicator="extinf"><span>Días terrestres</span></div>
+          </div>
+        </div>
+        <div style="width:100%;height: auto;float;left;" align="center">
+          <div class="counter wow flipInX3">
+                  <i style="margin-top:-11px;font-size: 30px" class="icon-high-temperature"></i>
+                  <h2 class="tempindicator"><span>T</span>emperatura</h2>
+                  <div data-indicator="tempn" class="circlecountermiles" align="center"><span  id="counter13">0</span></div>
+                  <div data-indicator="tempd" class="circlecountermiles" align="center"><span  id="counter14">0</span></div>
+                  <div data-indicator="extinf"><span>Mínima / Máxima </br>(expresados en centigrados)</span></div>
+          </div>
+        </div>
+      </div>
+         <!-- SEGUNDA COLUMNA -->
+      <div class="col-lg-3 col-md-9" align="">
+        <div class="row firstsonda">
+              <div class="col-lg-12 col-md-12 minh wow fadeIn" align="center">
+                <div class="timelinetitle"><span>Misiones</span></div>
+              </div>
+        </div>
+        <div id="default-skin-demo" class="wow fade animated default-skin demo scrollable" align="center">
+          <div class="contmission">
+            <div class="row wow fade delayed1">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed1">
+              <div class="col-lg-5 col-md-9 minhpi">
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1962</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(USA) MARINER 2</span>
+              </div>
+            </div>
+            <div class="row  wow fade delayed2">
+              <div class="col-lg-6 col-md-9 timeline minh"></div>
+              <div class="col-lg-6 col-md-9 minh"></div>
+            </div>
+            <div class="row rhovert wow fade delayed2">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toogle="tooltip" title="Pudo ingresar a la orbita, pero no llego a aterrizar">(URSS) Venera 4</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1967</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed3">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed3">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1967</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(USA) MARINER 5</span>
+              </div>
+            </div>
+            <div class="row wow fade delayed4">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed4">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(URSS) Venera 5 y 6</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1969</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed5">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed5">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión de aterrzaje" class="icon-38-lander"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1970</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span data-toggle="tooltip" title="Primera nave en aterrizar en otro planeta y enviar datos">(URSS) Venera 7 *</span>
+              </div>
+            </div>
+            <div class="row wow fade delayed6">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed6">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(URSS) Venera 8</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1972</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de aterrizaje" class="icon-38-lander"></i></div>
+              </div>
+            </div>
+            <div class="row wow fade delayed7">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed7">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión de aterrzaje" class="icon-38-lander"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1973</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(USA) MARINER 10</span>
+              </div>
+            </div>
+            <div class="row wow fade delayed8">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert wow fade delayed8">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toggle="tooltip" title="ambas naves poseian módulos de descenso y lograron aterrizar">(URSS) Venera 9 y 10 *</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1975</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de orbital" class="icon-26-sputnik"></i><i data-toggle="tooltip" title="Misión de aterrizaje" class="icon-38-lander"></i></div>
+              </div>
+            </div>
+             <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i><i data-toggle="tooltip" title="Misión atmosférica" class="icon-37-capsule-parachute"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1978</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span data-toggle="tooltip" title="5 naves en 1 con diferentes tipos de sonda atmosfericas">(USA) Pionner Venus *</span>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span data-toggle="tooltip" title="ambas naves poseian módulos de descenso y lograron aterrizar con dificultades">(URSS) Venera 11 y 12 *</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1978</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de orbital" class="icon-26-sputnik"></i><i data-toggle="tooltip" title="Misión de aterrizaje" class="icon-38-lander"></i></div>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-47-rocket"></i><i data-toggle="tooltip" title="Misión de aterrizaje" class="icon-38-lander"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1981/83</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span data-toggle="tooltip" title="Venera 13 (primera fotografia a color - 1981)">(URSS) Venera 13,14,15 y 16 *</span>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(URSS) Vega 1 y 2 *</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1984</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i><i data-toggle="tooltip" title="Misión de aterrizaje" class="icon-38-lander"></i><i data-toggle="tooltip" title="Misión atmosférica" class="icon-37-capsule-parachute"></i></div>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnki"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1989</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(USA) Magallanes</span>
+              </div>
+            </div>
+             <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(USA-ALE) Galileo</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1989</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>1997</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(USA-ESSA-Italia) Cassini/Huygens</span>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(USA) MESSENGER</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2004</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+               <div class="iconmissions"><i data-toggle="tooltip" title="Misión orbital" class="icon-26-sputnik"></i></div>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2005</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <span>(ESSA) Venus Express</span>
+              </div>
+            </div>
+            <div class="row fadeIn">
+              <div class="col-lg-6 col-md-9 timeline minh">
+              </div>
+              <div class="col-lg-6 col-md-9 minh">
+              </div>
+            </div>
+            <div class="row rhovert fadeIn">
+              <div class="col-lg-5 col-md-9 minhp">
+              <span>(Japon) PLANET-C, IKAROS Y UNITEC-1 (fracasó)</span>
+              </div>
+              <div class="col-lg-2 col-md-9 minhp">
+              <span>2010</span>
+              </div>
+              <div class="col-lg-5 col-md-9 minhpi"> 
+                <div class="iconmissions"><i data-toggle="tooltip" title="Misión de orbital" class="icon-26-sputnik"></i><i data-toggle="tooltip" title="Misión de sobrevuelo" class="icon-47-rocket"></i></div>
+              </div>
+            </div>
+
+                 </div>
+            </div>
+          </div>
+         <!-- TERCERA COLUMNA -->
+      <div class="col-lg-6 col-md-9" align="center">
+          <div class="col-lg-12 col-md-12" align="center">
+            <div class="boxplanet wow">
+              <object class="planetnimated" type="text/html" data="images/planets/animated/venus.html" width="auto" height="330"></object>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12" align="center">
+              <div style="width:80%;height: auto;float;left;">
+          <div class="counter wow flipInX4">
+                  <i style="transform: rotatey(180deg);" class="icon-video-camera"></i>
+                  <h2 class="movieindicator"><span>C</span>ine + <span>S</span>eries</h2>
+             <div id="myCarouselvenus" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarouselvenus" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="1"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="2"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="3"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="4"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="5"></li>
+    <li data-target="#myCarouselvenus" data-slide-to="6"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner slidermovie" role="listbox">
+    <div class="item active">
+      <img src="images/Slide/Venus/venus01.png" data-toggle="modal" data-target="#venus01">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus02.png" data-toggle="modal" data-target="#venus02">
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/venus03.png" data-toggle="modal" data-target="#venus03" >
+    </div>
+
+     <div class="item">
+      <img src="images/Slide/Venus/theexpansethumb.png" data-toggle="modal" data-target="#venus04" >
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/prehistoricwomenthumb.png" data-toggle="modal" data-target="#venus05" >
+    </div>
+
+    <div class="item">
+      <img src="images/Slide/Venus/queenofouterspacethumb.png" data-toggle="modal" data-target="#venus06" >
+    </div>
+
+        <div class="item">
+      <img src="images/Slide/Venus/venuswarsthumb.png" data-toggle="modal" data-target="#venus07" >
+    </div>
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarouselvenus" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarouselvenus" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+                 <!-- END CAROUSEL SLIDE -->
+          </div>
+        </div>
+          </div>
+
+      </div>
+  </div>
+        <!-- FIN PRIMERA FILA -->
+  </div>  
+</div> 
+</article>
+<!-- MODAL PELICULAS VENUS-->
+<!-- VENUS 01 -->
+<div id="venus01" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+    <!-- Modal content-->
+    <div class="modal-content planetburbg">
+  <div class="modal-footer">
+  <h5>Planet Bur (1962)</h5>
+  <div><p>Tres naves, Sirius, Vega, y Capella tienen como destino investigar a Venus, en su viaje una de ellas es envestida y destruida por un meteorito por lo que deben seguir con su mision en el planeta. Esta película Sovietica que cosechó buenas criticas a nivel local y mundial tiene ciertos puntos a remarcar y es que grandes films han basado efectos y diseños de esta película para las propias, como el caso de Star Wars (1977) con el famoso Hovercraft que usa Luke en Mos Eisley o el robot de Lost in Space (1965), sin duda alguna unos visionarios en lo que respecta a la ciencia ficción.</p>
+  </div>
+    <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 01 -->
+<!-- VENUS 02 -->
+<div id="venus02" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content firstspaceshipbg">
+   <div class="modal-footer">
+  <h5>First Spaceship On Venus (1960)</h5>
+  <div style="height:250px"><p>Película Estadounidense remake de la versión sovietica "Planet Bur" donde un grupo de astronautas que serian los primeros en pisar Venus, se topan con un mundo prehistorico al mejor estilo Jurassic Park.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 02 -->
+<!-- VENUS 03 -->
+<div id="venus03" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content voyagetothebg">
+   <div class="modal-footer">
+  <h5>Voyage to the Prehistoric Planet (1965)</h5>
+  <div style="height:250px"><p>Película Estadounidense remake de la versión sovietica "Planet Bur" donde un grupo de astronautas que serian los primeros en pisar Venus, se topan con un mundo prehistorico al mejor estilo Jurassic Park.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 03 -->
+<!-- VENUS 04 -->
+<div id="venus04" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content theexpansebg">
+   <div class="modal-footer">
+  <h5>The Expanse (2015)</h5>
+  <div><p>(Spoiler) Durante la temporada 2, el planeta Venus se hace importante dado que se estrella en su superficie el asteroide Eros, esto sucede luego de varios situaciones que llevaron a un desvio posterior del asteroide y que luego de que se precipite en el planeta este tome gran participación que nos da pie para un seguro intenso comienzo de temporada 3.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 04 -->
+<!-- VENUS 05 -->
+<div id="venus05" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content prehistoricwomenbg">
+   <div class="modal-footer">
+  <h5>Voyage to the Planet of Prehistoric Women (1968)</h5>
+  <div><p>(Spoiler) Durante la temporada 2, el planeta Venus se hace importante dado que se estrella en su superficie el asteroide Eros, esto sucede luego de varios situaciones que llevaron a un desvio posterior del asteroide y que luego de que se precipite en el planeta este tome gran participación que nos da pie para un seguro intenso comienzo de temporada 3.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 05 -->
+<!-- VENUS 06 -->
+<div id="venus06" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content queenofouterbg">
+   <div class="modal-footer">
+  <h5>Queen of Outer Space (1958)</h5>
+  <div><p>(Spoiler) Durante la temporada 2, el planeta Venus se hace importante dado que se estrella en su superficie el asteroide Eros, esto sucede luego de varios situaciones que llevaron a un desvio posterior del asteroide y que luego de que se precipite en el planeta este tome gran participación que nos da pie para un seguro intenso comienzo de temporada 3.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 06 -->
+<!-- VENUS 07 -->
+<div id="venus07" class="modal fade" role="dialog">
+  <div class="modal-dialog-movie">
+
+    <!-- Modal content-->
+    <div class="modal-content venuswarsbg">
+   <div class="modal-footer">
+  <h5>Venus Wars (1989)</h5>
+  <div><p>Seria animada basada en el manga del mismo nombre. En el 2003 un asteroide de nombre Apollon colisiona contra el planeta Venus dispersando gran parte de la atmosfera y modificando la rotación del planeta acercandolo con el de la tierra. Esto genera que se lance una carrera por la conquista del planeta Venus terraformandolo y para el año 2089 el planeta ya poseia 1 millon de habitantes.</p>
+  </div>
+  <div class="buttoner" align="left">
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-coffee"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 5px;"class="fa fa-ticket"></i>
+              </div>
+              <div><i style="padding: 0px 0px 0px 4px;" class="fa fa-trophy"></i>
+              </div>
+              <div type="button" id="closestop" data-dismiss="modal"><i style="padding: 0px 0px 0px 6px;" class="fa fa-times"></i>
+              </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+<!-- END VENUS 07 -->
+<script type="text/javascript">
+    $(window).load(function () {
+        $(".demo").customScrollbar();
+        $("#fixed-thumb-size-demo").customScrollbar({fixedThumbHeight: 50, fixedThumbWidth: 60});
+    });
+</script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('#preloader').fadeOut('slow');
+	$('body').css({'overflow':'hidden'});
+	})
+</script>
+<script>
+            $(function () { // wait for document ready
+              // build scene
+              var scene = new ScrollMagic.Scene({triggerElement: "#solsun", duration:0})
+                      .setPin("#sonda")
+                      .addTo(controller);
+            });
+          </script>
+          <script>
+            // build scene
+            var scene = new ScrollMagic.Scene({triggerElement: "#pmercury"})
+                    // trigger animation by adding a css class
+                    .setClassToggle("#sonda", "rotation")
+                    .addTo(controller);
+</script>
+</body>
+</html>

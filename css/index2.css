@@ -1,0 +1,469 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'radiospace';
+    src: url('../fonts/radiospace/Bespoke.otf') format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'spacgi';
+    src: url('../fonts/elronet/spacgi.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'adaywithoutsun';
+    src: url('../fonts/a day without sun/A DAY WITHOUT SUN.otf') format('Opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'agentletouch';
+    src: url('../fonts/a gentle touch/A Gentle Touch.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ASafePlacetoFall';
+    src: url('../fonts/asafeplacetofall/ASafePlacetoFall.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brie';
+    src: url('../fonts/neon/brie.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Champagne';
+    src: url('../fonts/Neon/champagne.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Neon';
+    src: url('../fonts/neon/Neon.ttf') format('Truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {overflow:hidden;
+	background-image:url("../images/bodybg1.jpg");
+	background-position:left top;
+    background-size:105%;
+	background-repeat: repeat-y;
+	background-attachment:scroll;}
+
+
+
+.row {margin-right:0px!important;height:50%}
+.responsivh {height:100%}
+/**************** PRELOADER *************************/
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should be a color other than white */
+	z-index:9999999; /* makes sure it stays on top */
+}
+
+#status {
+	width:100%;
+	height:650px;
+	position:absolute;
+	left:0; /* centers the loading animation horizontally on the screen */
+	top:0; /* centers the loading animation vertically on the screen */
+	margin:0 0 0 0; /* is width and height divided by two */
+}
+
+#status i {position:absolute;font-size:145px;color:black;margin:15% 0 0 25%;}
+.icon-11-black-hole {z-index:999999!important;position:absolute;font-size:445px;color:rgba(34,33,33,0.83);margin:5% 0 0 32%;}
+
+/**************** AUDIOBOX *************************/
+.aurepro {}
+audio#reprod {position:absolute;top:0;left:70%;background:rgba(237,228,228,0.65);z-index:99999}
+audio#reprod1 {position:absolute;top:0;left:5%;background:rgba(237,228,228,0.65);z-index:99999}
+.contmercury {
+width:100%;
+background-image:url("../images/mercurybg.png");
+background-position:-300px -150%;
+background-size:125%;
+background-repeat:no-repeat;
+height:auto;
+min-height:630px;
+}
+
+/*****************  SONDA ******************/
+.firstsonda {margin-top: 30%;}
+.wscroll {overflow-x: hidden;height: 450px;overflow-y: scroll;}
+#sonda {margin-top: -110px !important;position:absolute;left:47.2%;top:1500px;width:50px;height: auto;transform:rotate(-45deg);transition:all 1s ease-in;}
+#sonda i {font-size: 52px;}
+.contmission {position:relative;cursor: pointer;}
+.iconmissions {text-align: center;}
+.iconmissions i {z-index:9999;font-size:22px;margin-left:auto;margin-right: auto}
+.timeline {border-right:2px solid white;}
+.minh {height:35px;}
+.minhp {height:auto;padding-top:4px;}
+.minhpi {height:25px;padding:0px;}
+.timelinetitle {width:60%;height:100%;border-bottom:1px solid white;}
+.timelinetitle span {font-size: 24px;}
+.rhovert {background: transparent;transition:all 0.5s ease-out;}
+.rhovert:hover {background:white;color:black;transition:all 0.5s ease-out;}
+.viewport {width:auto!important;height:400px!important;}
+.overview {width:100%!important;}
+.contmercury img {
+float:left;
+}
+
+article {
+    min-height: 600px;
+    height: 100%;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+}
+.planetcontenedor {
+position:absolute;
+width:300px;
+height:300px;
+background-image:url(../circle.png);
+background-repeat:no-repeat;
+background-position:center;
+opacity:0;
+z-index:0;
+}
+
+h5 {
+color:white;
+font:55px/55px "radiospace", sans-serif;
+font-weight:normal;
+text-align:center;
+border-bottom:2px solid white;
+}
+h2 {
+color:rgba(244,243,243,1.00);
+font-size:16px;
+width:98%;
+text-align:center;
+margin-bottom:0px;
+}
+
+h3 {
+color:white;
+font:55px/55px "radiospace", sans-serif;
+font-weight:normal;
+text-align:center;
+opacity:1;
+text-decoration: underline double;
+}
+h4 {
+color:white;
+font:35px/38px "radiospace", sans-serif;
+font-weight:normal;
+text-align:center;
+opacity:1;
+text-decoration: underline double;
+}
+.indicatorplanet {opacity:1;position:relative;background:rgba(0,0,0,0.7);width:100%;z-index:999999}
+
+.boxplanet {
+width:100%;
+height:auto;
+}
+.planetnimated {z-index:9999;position: relative;}
+.upsolar {transform:translate(0px,-225px) scale3d(1.3, 1.3, 1.3) rotate(90deg)!important;transition:all 1s}
+
+.dwnsolar {transform:translate(0px,130px) scale3d(1.3, 1.3, 1.3) rotate(90deg)!important;transition:all 1s;}
+.showin {opacity:1!important;z-index:99999!important;transition:all 1s;}
+
+.boxplanet i {font-size:26px;
+color:white;
+position:absolute;
+left:48%;
+opacity:0;
+text-shadow:2px 2px 5px rgba(34,31,31,0.73);
+margin-top:20%;
+cursor:pointer;
+z-index:-1;
+transition:all 0.5s;
+}
+.boxplanet:hover .mercurycore, .boxplanet:hover .mercurycore span {opacity:1;
+z-index:9;
+transition:all 1.5s;
+}
+.boxplanet .mercurycore {
+    width:20.7vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background-image: url(../images/planets/mercurycore.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -21.7vw;
+    margin-left: 0.88vw;
+    transition: all 1.5s;
+
+}
+
+.boxplanet div span[title*=mecurt] {border:1px solid white;margin:45px 0px 0px 150px;}
+.boxplanet div span[title*=mecurt]:after {content:"";margin:-1px 0px 0px -117px;background:white;position:absolute;width:73px;height:1px;}
+
+.boxplanet div span {font-size:14px;font-weight:bold;position:absolute;margin-top:250px;margin-left:10px;opacity:0;transition:all 1.5s;}
+.boxplanet div span[title*=mecore] {border:1px solid white;margin:120px 0px 0px 150px;}
+.boxplanet div span[title*=mecore]:after {content:"";margin:-1px 0px 0px -124px;background:white;position:absolute;width:75px;height:1px;}
+
+.boxplanet div span[title*=memantle] {border:1px solid white;margin:205px 0px 0px 150px;}
+.boxplanet div span[title*=memantle]:after {content:"";margin:-1px 0px 0px -117px;background:white;position:absolute;width:73px;height:1px;}
+.contenedor img {
+margin:15px 0px 0px 0px!important;
+}
+
+
+/****************************** INDICATORS ***********************************/
+
+.counter {opacity:0;height:100%;width:88%;font-size:12px;padding-bottom:10px;margin: 20px 0px 40px 0px;transition:all 0.5s}
+.counter i, .counterorbita i, .countertemp i {color:white!important;font-size: 40px;position: absolute;margin: -14px 0px 0px 19%;}
+.counter h2 {text-align:left;font-size:16px;border-bottom:2px solid white;font-weight:100;margin-bottom: 3px}
+.counter h2 span {font-size:22px;font-weight:bold}
+.counter p i {font-size:12px;position:relative;margin:0px 6px 0px 6px}
+/*.orbitindicator  {background: rgba(44, 131, 243, 0.8);color: white;}
+.distindicator  {background: rgba(221, 99, 99, 0.8);color: white;}
+.tempindicator  {background: rgba(203,157,43,0.8);color: white;}
+.movieindicator {background:rgba(64, 191, 79, 0.8);color: white;}*/
+.counter:hover .moviecounter {opacity:1;transition:all 0.5s;}
+.counter .moviecounter {opacity:0;position: absolute;margin: -10px 0px 0px 5px;transition:all 0.5s;}
+.orbitindicator, .distindicator, .tempindicator, .movieindicator {cursor:pointer;}
+
+/****************************** CIRCLE INDICATORS ***********************************/
+
+.circlesvg {
+z-index: 9999999999999999999;
+position: relative;
+}
+
+.circlecounter, .circlecountermiles {width:60px;height:60px;border-radius:100%;}
+.barcounter {float:left;width:100%;height:30px;}
+[data-indicator=tempsun1]  {float:left;width:0.1%;height:29px;background:rgb(234, 234, 28);}
+[data-indicator=tempsun2]  {float:left;width:0.1%;height:29px;background:rgb(244, 173, 31);}
+[data-indicator=tempsun3]  {float:left;width:0.1%;height:29px;background:rgb(219, 250, 227);}
+[data-indicator=tempsun4]  {float:left;width:0.1%;height:29px;background:rgb(242, 43, 43);}
+
+@keyframes temp1 {
+0% {width:0.1%}
+100% {width:70%}
+}
+@keyframes temp2 {
+0% {width:0.1%}
+100% {width:60%}
+}
+@keyframes temp3 {
+0% {width:0.1%}
+100% {width:95%}
+}
+@keyframes temp4 {
+0% {width:0.1%}
+100% {width:85%}
+}
+.temp1 {animation-name:temp1;animation-duration:4s;animation-timing-function:ease-out;animation-fill-mode:forwards;animation-iteration-count:1}
+.temp2 {animation-name:temp2;animation-duration:3s;animation-timing-function:ease-out;animation-fill-mode:forwards;animation-iteration-count:1}
+.temp3 {animation-name:temp3;animation-duration:6s;animation-timing-function:ease-out;animation-fill-mode:forwards;animation-iteration-count:1}
+.temp4 {animation-name:temp4;animation-duration:5s;animation-timing-function:ease-out;animation-fill-mode:forwards;animation-iteration-count:1}
+
+
+[data-indicator=tempsun2] span, [data-indicator=tempsun4] span {font-size: 25px;padding-top: 15px;position: relative;top: 30%;}
+[data-indicator=tempsun1] span, [data-indicator=tempsun3] span {color:black;font-size: 25px;padding-top: 15px;position: relative;top: 30%;}
+
+/****************************** SUN TEMPERATURE ***********************************/
+.progress-bar-red {background-color:red;}
+
+.circlecounter[data-indicator=km], .circlecountermiles[data-indicator=km] {background:rgb(219, 137, 77);}
+.circlecounter[data-indicator=orb] {background:rgb(151, 219, 77);}
+.circlecounter[data-indicator=tempn], .circlecountermiles[data-indicator=tempn] {position: relative;background: rgb(219, 217, 77);float: left;margin-left:45px;}
+.circlecounter[data-indicator=tempd], .circlecountermiles[data-indicator=tempd] {z-index:-1;margin-left:25px;position: relative;opacity: 1;background: rgb(225, 42, 42);transition: all 0.5s;}
+
+
+.circlecounter span {font-size: 30px;padding-top: 15px;position: relative;top: 38%;}
+.circlecountermiles span {font-size: 26px;padding-top: 15px;position: relative;top: 38%;}
+
+[data-indicator=extinf] {width:100%;float:left;margin-top:5px;background:transparent;color: white;padding: 5px;}
+[data-indicator=extinf] i {color:black!important;font-size:12px;position:relative}
+.slidermovie img {width:80%;height:auto;}
+.travelship {width:auto;cursor:pointer;margin:15px 0px 0px 15px;font-size:22px;float:left;color:white}
+.travelship i {float:left;transform:rotate(135deg);width:33%;font-size:22px;}
+.travelship span {float:left;}
+a.atravelship .tooltip-inner {margin-left:15px!important;border:1px solid white;border-radius:5px;background:rgba(26,24,24,0.69)!important;font-size:13px;color:white;}
+#tooltip {z-index:99999;}
+svg {float:left;}
+.travelship a {position:absolute;}
+[data-move] {position:absolute;font-size:14px;margin-top:15px;left:45%;z-index:99999}
+span[data-move=bajar] {left:43%;top:550px;}
+span[data-move=derecha] {left:90%;top:250px;}
+span[data-move=izquierda] {left:10%;top:250px;}
+.solarbajar {transform:scale(2,2) translatey(150px)!important;transition:all 1s;}
+.solarsubir {transform:scale(2,2) translatey(-150px)!important;transition:all 1s;}
+/****************************** END INDICATORS ***********************************/
+.zoom {transform:scale(1.8,1.8) translate(0px,-250px) rotate(0deg);transition:all 1.2s;}
+/**************************** MENU PLANETS *********************************/
+.tab-content p {color:white;
+}
+.contentinfo {margin:15px 10px 0px 0px;float:left;width:80%;height:500px;background: rgba(0,0,0,0.60);}
+.spaceholder {float: right;padding-top: 25px;width: 17%;height: 500px;padding-right:10px;}
+
+/*.mercurybg {background-image:url("../images/mercurybg.png");background-position:-450px -50%;background-repeat:no-repeat;background-size:100%;}*/
+
+/************ BOTONES **************/
+.spaceholder div:hover span{transform:rotate3d(0,1,0,180deg);transition:all 1s; perspective:200px;}
+.spaceholder span {background:rgba(244,238,238,0.89);margin: 10px 0px 5px 25px;padding:12px 15px 12px 15px;border-radius: 100%;border: 2px solid white;float: right;transition:all 0.5s}
+.spaceholder i {font-size:56px;color:black;}
+.spaceholder div {border: 2px solid white;padding: 3px 13px 0px 0px;border-radius: 100%;height: 120px;}
+.spaceholder div[title]:after {opacity:0;text-align:right;font-size:18px;position:absolute;margin:45px 0px 0px -50px;content:attr(title)" ";transition:all 1s;}
+.spaceholder div[title]:hover:after {opacity:1;margin:45px 0px 0px -120px;transition:all 1s;}
+/*div[title*="Descubierto"] span {background:rgba(94,192,217,1.00)}
+div[title*="El Planeta"] span {background:rgba(233,109,111,1.00)}
+div[title*="Viajes hechos"] span {background:rgba(140,212,65,1.00)}*/
+
+/**************************** MENU ICON *********************************/
+.nav-pills i {font-size:24px;color:white;}
+
+.contador-num {  
+      color:white;
+    }
+/**************************** CAROUSEL MOVIE INFO *********************************/
+#myCarousel, #marsCarousel, #myCarouselsun, #myCarouselvenus, #myCarouselmars {width:150px;height:170px;}
+
+/**************************** MAIN INFO *********************************/
+.maininfo {
+margin-top:10px;
+padding:5px 15px 0px 15px;
+width:100%;
+height:auto;
+border-top:4px double white;
+border-bottom:4px double white;
+}
+/**************************** MODAL MOVIE *********************************/
+.modal-title {color:white}
+.modal-content {position:initial!important;height:100%}
+/**************************** MODAL MARTS THE MARTIAN *********************************/
+#damon {
+}
+.martianbg {background-image: url("../images/movies/mars/themartian/themartian.jpg");background-repeat: no-repeat;background-position:center center;}
+/**************************** END MARTS THE MARTIAN *********************************/
+/**************************** MODAL MARTS RED PLANET *********************************/
+#redplanet {
+background-position: top left;
+background-repeat: no-repeat;
+background-size: 100%;
+width: 40%;
+height: 1032px;
+position: absolute;
+margin: 8% 0 0 2%;
+z-index: 99999999 !important;}
+.redplanetbg {background-image: url("../images/movies/mars/redplanet/redplanet.jpg");background-repeat: no-repeat;background-position:center center;}
+/**************************** END MARTS RED PLANET *********************************/
+#missiontomars {
+background-position: top left;
+background-repeat: no-repeat;
+background-size: 100%;
+width: 40%;
+height: 1032px;
+position: absolute;
+margin: 8% 0 0 2%;
+z-index: 99999999 !important;}
+.missiontomarsbg {background-image: url("../images/movies/mars/missiontomars/missiontomars.jpg");background-repeat: no-repeat;background-position:center center;}
+/**************************** END MARTS RED PLANET *********************************/
+/**************************** MERCURIO COLLISION EARTH *****************************/
+#mercury {
+background-position: top left;
+background-repeat: no-repeat;
+background-size: 100%;
+width: 40%;
+height: 1032px;
+position: absolute;
+margin: 8% 0 0 2%;
+z-index: 99999999 !important;}
+.mercurybg {background-size:100%;background-image: url("../images/movies/mercury/collisionearth/collisionbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.sunshinebg {background-size:110%;background-image: url("../images/movies/sun/sunshine/sunshinebg.jpg");background-repeat: no-repeat;background-position:top left;}
+.knowingbg {background-size:110%;background-image: url("../images/movies/sun/knowing/knowingbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.solarattackbg {background-size:110%;background-image: url("../images/movies/sun/solarattack/solarattackbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.solarcrisisbg {background-size:110%;background-image: url("../images/movies/sun/solarcrisis/solarcrisisbg.jpg");background-repeat: no-repeat;background-position:top left;}
+
+/********* VENUSBG *******************/
+.theexpansebg {background-size:110%;background-image: url("../images/movies/venus/theexpanse/theexpansebg.jpg");background-repeat: no-repeat;background-position:top left;}
+.planetburbg {background-size:110%;background-image: url("../images/movies/venus/planetbur/planetburbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.firstspaceshipbg {background-size:110%;background-image: url("../images/movies/venus/firstspaceship/firstspaceshipbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.voyagetothebg {background-size:110%;background-image: url("../images/movies/venus/voyagetothe/voyagetothebg.jpg");background-repeat: no-repeat;background-position:top left;}
+.prehistoricwomenbg {background-size:110%;background-image: url("../images/movies/venus/prehistoricwomen/prehistoricwomenbg.jpg");background-repeat: no-repeat;background-position:top left;}
+.queenofouterbg {background-size:110%;background-image: url("../images/movies/venus/queenofouterspace/queenofouterspacebg.jpg");background-repeat: no-repeat;background-position:top left;}
+.venuswarsbg {background-size:110%;background-image: url("../images/movies/venus/venuswars/venuswarsbg.jpg");background-repeat: no-repeat;background-position:top left;}
+
+
+
+.modal-body {font-size:16px}
+.modal {overflow:hidden!important;}
+.modal-dialog-movie {width:100%; height:100%;}
+.modal-footer {
+	padding: 16px;
+	font:26px/26px 'champagne', sans-serif;
+	background:rgba(0,0,0,0.4);
+	color:white;
+    text-align: right;
+    position: absolute;
+	line-height:26px;
+    margin:8% 0 0 0%;
+	border:none;
+}
+.modal h4 {color:rgba(42,32,32,1.00)}
+.modal {padding:0px!important}
+.closefilm {background:rgba(0,0,0,0.6);padding:5px 10px;}
+.stopfade { 
+   opacity: .5;
+}
+.buttoner i {font-size:19px;color:white;}
+.buttoner div {cursor:pointer;float:left;margin:0 5px;}
+
+/***************** VIDEO BACKGROUND *****************/
+#earthv {
+    height: 100%;
+    margin-top: 135px;
+    margin-left: -125px;
+}
+#mercuryv {
+    height: 100%;
+    margin-top: 135px;
+    margin-left: -125px;
+}
+#venusv {
+    height: 100%;
+    margin-top: 135px;
+    margin-left: -125px;
+}
+#earthmoonv {
+    width: 100%;
+    margin-top: 85px;
+    margin-left: -1px;
+}
+#saturnv {
+    width: 90%;
+    margin-top: -125px;
+    margin-left: -5px;
+}
+#uranusv {
+    width: 90%;
+    margin-top:48px;
+    margin-left: -5px;
+}
+.continfo {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.viewer.transparent-pattern {background:transparent!important}
+iframe .titlebar {display:none!important;}
+iframe .controls {display:none!important;}
+.mercuryvid01 {width:100%;}
+/*#default-skin-demo:hover .thumb {opacity:0.4!important;transition:all 0.5s;}
+.thumb {opacity:0!important;transition:all 0.5s;}
